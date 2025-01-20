@@ -1,0 +1,11 @@
+.appBar {
+  border-bottom: 1px solid #ddd;
+}
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.link {
+  margin: 8px;
+}

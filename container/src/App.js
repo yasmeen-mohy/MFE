@@ -12,7 +12,7 @@ export default () => {
     productionPrefix: "co",
   });
   return (
-    <StylesProvider createGenerateClassName={generateClassName}>
+    <StylesProvider generateClassName={generateClassName}>
       <BrowserRouter>
         <div>
           <Header></Header>

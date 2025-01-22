@@ -2,7 +2,7 @@ import React from "react";
 import ReactDom from "react-dom";
 import {createMemoryHistory,createBrowserHistory} from 'history'
 import App from "./App";
-const mount = (el,{onNavigat,defaultHistory,initialPath}) =>{
+const mount = (el,{onNavigat,defaultHistory, initialPath}) =>{
     const history=defaultHistory || createMemoryHistory({
         initialEntries:[initialPath]
     });
@@ -25,7 +25,7 @@ const mount = (el,{onNavigat,defaultHistory,initialPath}) =>{
 // as a summary when you  want to sync the path of container to be the same as marketing (the marketing is tha changed one ) create the function on conatiner and use it in marketing 
 // when the changed one is the container path and you want to sync it with marketing path create the function in the marketing 
 if(process.env.NODE_ENV === 'development'){
-    const devRoot= document.querySelector('#marketing-dev-root');
+    const devRoot= document.querySelector('#auth-dev-root');
     if(devRoot){
         mount(devRoot,{defaultHistory:createBrowserHistory()});
     }
